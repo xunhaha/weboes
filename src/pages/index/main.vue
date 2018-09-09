@@ -168,6 +168,13 @@ export default {
         that.weatherForm = res.data.data.forecast;
         that.warrytip = res.data.data.ganmao;
         that.wendu = res.data.data.wendu;
+        that.$notify({
+          title: '温馨提示',
+          dangerouslyUseHTMLString: true,
+          iconClass: 'el-icon-location-outline',
+          duration: 1000,
+          message: '今天是'+that.weatherForm[0].date+'<br>天气'+that.weatherForm[0].type+'<br>请注意天气变化！',
+        });
       }else{
         that.$message.error('天气获取失败');
       }

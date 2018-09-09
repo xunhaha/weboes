@@ -10,6 +10,9 @@
           <li>为维护考试公平，考试过程中强制退出系统或遇网络情况被动退出系统，系统都不予补考，您可以向管理员发出补考申请。</li>
         </ul>
       </div>
+      <div v-show="scoreinfo.length==0" class="noScore">
+        <span>未查询到您的考试数据！请参加考试后查询。</span>
+      </div>
       <div class="score" v-loading="loading" element-loading-text="成绩加载中，请稍等">
         <a href="javascript:void(0);">
         <el-card class="box-card" v-for="elem in scoreinfo" :key="elem.key" shadow="hover" @click.native="goScore(elem.paperid)">
@@ -131,5 +134,9 @@ export default {
    float: right;
    font-size: 20px;
    color: #4D87F8;
+ }
+ .noScore{
+   font-size: 20px;
+   color: #A1A1A1;
  }
 </style>
