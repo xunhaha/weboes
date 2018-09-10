@@ -172,7 +172,7 @@ export default {
           title: '温馨提示',
           dangerouslyUseHTMLString: true,
           iconClass: 'el-icon-location-outline',
-          duration: 1000,
+          duration: 3000,
           message: '今天是'+that.weatherForm[0].date+'<br>天气'+that.weatherForm[0].type+'<br>请注意天气变化！',
         });
       }else{

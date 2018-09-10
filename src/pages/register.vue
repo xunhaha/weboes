@@ -201,7 +201,7 @@ export default {
       });
     },
     login(){
-      this.$router.push({path:'/login'});
+      this.$router.push({path:'/login',query:{account:this.ruleForm2.username,password:this.ruleForm2.checkPass}});
     }
   },
   beforeCreate() {

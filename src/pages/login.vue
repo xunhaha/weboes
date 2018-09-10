@@ -78,6 +78,7 @@ export default {
             that.$notify({
               title: '登录成功',
               message: '祝你取得好成绩！',
+              duration: 3000,
               type: 'success'
             });
             sessionStorage.setItem('user', that.ruleForm2.account);
@@ -93,6 +94,12 @@ export default {
           that.logining = false;
         });
       }
+    }
+  },
+  created(){
+    if(this.$route.query.account&&this.$route.query.password){
+      this.ruleForm2.account=this.$route.query.account;
+      this.ruleForm2.checkPass=this.$route.query.password;
     }
   }
 }
@@ -112,14 +119,16 @@ export default {
     background: #fff;
     border: 1px solid #eaeaea;
     box-shadow: 0 0 30px #cac6c6;
-    .title {
-      margin: 0px auto 40px auto;
-      text-align: center;
-      color: #505458;
-    }
-    .remember {
-      margin: 0px 0px 35px 10px;
-    }
+  }
+  .title {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px auto 20px auto;
+    text-align: center;
+    font-size: 20px;
+    color: #4D87F8;
+  }
+  .remember {
+    margin: 10px;
   }
   .left{
     position: absolute;
@@ -128,6 +137,7 @@ export default {
     background-color: #4D87F8;
     width: 590px;
     height: 110%;
+    box-shadow: 0px 15px 15px 0px grey;
     z-index: 0;
   }
   a{
