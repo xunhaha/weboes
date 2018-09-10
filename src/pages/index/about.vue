@@ -2,10 +2,6 @@
   <transition name="el-zoom-in-top">
   <div class="main" :style="{color:color}">
 
-    <el-card :class="{'imgcard':!isClass,'imgcard01':isClass}" @mouseenter.native="enter(0)" @mouseleave.native="leave(0)">
-      <img src="static/img/zanshang.png" alt="赞赏一下" class="img">
-    </el-card>
-
     <el-card :class="{'imgcard1':!isClass1,'imgcard11':isClass1}" @mouseenter.native="enter(1)" @mouseleave.native="leave(1)">
       <img src="static/img/zhuyuan.jpg" alt="祝愿" class="img">
     </el-card>
