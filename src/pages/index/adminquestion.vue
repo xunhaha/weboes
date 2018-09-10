@@ -23,7 +23,7 @@
          prop="qdescription"
          label="题干"
          align="center"
-         width="450">
+         width="400">
        </el-table-column>
        <el-table-column
          prop="qclassification"
@@ -76,8 +76,8 @@
          <span style="margin-left:20px;margin-top:10px;" v-for="(elem,index) in this.questioninfo.new.options" :key="elem.key">选项{{index+1}}：{{elem.option}}<br></span>
        </span>
        <h1>正确答案：{{this.questioninfo.old.qclassification=='0'?('选项'+(Number(this.questioninfo.new.answer)-4)):(this.questioninfo.new.answer=='5'?'对':'错')}}</h1>
-       <h1>小广告：</h1>
-       <img src="http://s9.rr.itc.cn/r/wapChange/20168_15_12/a8kh2u7851370846233.jpg" width="100%" alt="huwwei">
+
+       <img src="static/img/logobanner2.png" width="100%" alt="huwwei">
      </el-card>
    </transition>
      <!--自动选题-->
@@ -542,7 +542,7 @@ export default {
 }
 .card_left{
   text-align: left;
-  position: absolute;
+  position: fixed;
   width: 350px;
   top: 0px;
   left: 0px;

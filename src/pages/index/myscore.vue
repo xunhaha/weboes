@@ -3,7 +3,7 @@
   <div>
     <template v-if="scoreshow">
       <div class="top" :style="{color:color}">
-        <b>成绩查询须知</b>
+        <b style="font-size:17px;">成绩查询须知</b>
         <ul>
           <li>系统会自动查询您所有考试的成绩，进行显示</li>
           <li>如果长时间未加载成绩，可能您未参加任何考试，或遇到网络延迟，请耐心等待不要重复刷新页面</li>

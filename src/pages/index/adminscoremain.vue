@@ -2,8 +2,10 @@
   <div class="">
     <div class="" v-if="!paperinfo.paperid">
       <div class="nopaper">
-        <img src="static/img/logo1.png" alt="logo" class="logo">
-        <img src='static/img/logobanner.png' alt="logobanner" class="logobanner">
+        <h1 style="font-size: 30px;">在线成绩分析系统</h1>
+        <h2>请选择左侧考试科目，开始成绩分析</h2>
+        <h2>如果系统长时间加载，刷新页面即可</h2>
+        <h2>本系统提供已结束考试的成绩展示、成绩分析、数据导出等功能</h2>
       </div>
     </div>
 
@@ -263,7 +265,14 @@ export default {
 }
 .nopaper{
   text-align: center;
-  margin-top: 130px;
+  margin-top: 150px;
+  color: #A8A8A8;
+  font-family: 'Courier New', Courier, monospace;
+  transition: color 1s,font-size 1s;
+}
+.nopaper:hover{
+  font-size: 12px;
+  color: #4D87F8;
 }
 .logobanner{
   width: 100%;

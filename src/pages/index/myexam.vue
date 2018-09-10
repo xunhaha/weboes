@@ -3,7 +3,7 @@
   <div v-loading="loading">
     <div class="top">
       <div class="tips" :style="{color:color}">
-        <b>查询须知</b>
+        <b style="font-size:17px;margin:10px">查询须知</b>
         <ul>
           <li>点击右侧查询按钮，查询您的所有考试信息</li>
           <li>认真核实您的考试信息，确认无误后可以进行相应操作</li>
